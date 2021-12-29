@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* this works fine */
+  .neon {
+    --colors-secondaryThing-500: 144, 160, 64;
+  }
+}
+
+/* this works fine */
+.dark {
+  --colors-secondaryThing-500: 139, 0, 0;
+  --colors-primaryThing-500: 0, 0, 139;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
